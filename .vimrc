@@ -26,6 +26,9 @@ let g:indentLine_setColors = 0
 " PERSONAL PREFERENCES
 " Set tab size and use spaces
 set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
+set backup
+set backupdir=/tmp
+set directory=/tmp
 
 " Highlight for color and column
 set colorcolumn=81
