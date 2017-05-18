@@ -7,6 +7,7 @@ Plug 'ayu-theme/ayu-vim'
 Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-fugitive'
 
 " Initialize plugin system
 call plug#end()
