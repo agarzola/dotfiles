@@ -45,3 +45,6 @@ set formatoptions-=t
 
 " Ignore case on commands
 set ignorecase
+
+" Display line numbers
+set number
