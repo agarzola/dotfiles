@@ -54,5 +54,11 @@ set number
 " Unminify HMTL
 command UnMinifyHTML %s/<[^>]*>/\r&\r/g
 command RemoveBlank %g/^$/d
-" This chained command throws an error. :(
-command UnfuckHTML UnMinifyHTML|RemoveBlank
+
+function UnfuckHTML ()
+  :UnMinifyHTML
+  :normal gg=G
+  :RemoveBlank
+  :echo "I did my best to unfuck it, sir."
+endfunction
+command UnfuckHTML call UnfuckHTML()
