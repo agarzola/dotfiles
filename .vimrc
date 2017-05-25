@@ -48,3 +48,10 @@ set ignorecase
 
 " Display line numbers
 set number
+
+" CUSTOM COMMANDS
+" Unminify HMTL
+command UnMinifyHTML %s/<[^>]*>/\r&\r/g
+command RemoveBlank %g/^$/d
+" This chained command throws an error. :(
+command UnfuckHTML UnMinifyHTML|RemoveBlank
