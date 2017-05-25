@@ -8,6 +8,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
+Plug 'lumiliet/vim-twig'
 
 " Initialize plugin system
 call plug#end()
