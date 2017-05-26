@@ -9,6 +9,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'lumiliet/vim-twig'
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 
 " Initialize plugin system
 call plug#end()
