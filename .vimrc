@@ -19,9 +19,6 @@ set termguicolors
 let ayucolor='mirage'
 colorscheme ayu
 
-" Color overrides
-highlight MatchParen guibg=#5C6773
-
 " IndentLine
 let g:indentLine_char = '|'
 let g:indentLine_first_char = '|'
@@ -39,6 +36,9 @@ set directory=/tmp
 set colorcolumn=81
 set cursorline
 highlight ColorColumn ctermbg=183
+
+" Color overrides
+highlight MatchParen guibg=#5C6773
 
 " Wrap on 80 char column
 set wrap
