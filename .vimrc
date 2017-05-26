@@ -55,11 +55,11 @@ set number
 
 " CUSTOM COMMANDS
 " Unminify HMTL
-command UnMinifyHTML %s/<[^>]*>/\r&\r/g
+command UnminifyHTML %s/<[^>]*>/\r&\r/g
 command RemoveBlank %g/^$/d
 
 function UnfuckHTML ()
-  :UnMinifyHTML
+  :UnminifyHTML
   :normal gg=G
   :RemoveBlank
   :echo "I did my best to unfuck it, sir."
