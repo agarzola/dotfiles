@@ -45,7 +45,7 @@ set wrap
 set linebreak
 set nolist
 set textwidth=80
-set formatoptions-=t
+set formatoptions-=tro
 
 " Ignore case on commands
 set ignorecase
