@@ -19,6 +19,9 @@ set termguicolors
 let ayucolor='mirage'
 colorscheme ayu
 
+" Color overrides
+highlight MatchParen guibg=#5C6773
+
 " IndentLine
 let g:indentLine_char = '|'
 let g:indentLine_first_char = '|'
