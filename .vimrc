@@ -65,3 +65,7 @@ function UnfuckHTML ()
   :echo "I did my best to unfuck it, sir."
 endfunction
 command UnfuckHTML call UnfuckHTML()
+
+" Open NERDtree if no file specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
