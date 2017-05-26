@@ -44,7 +44,8 @@ highlight MatchParen guibg=#5C6773
 set wrap
 set linebreak
 set nolist
-set textwidth=80
+set textwidth=0
+set wrapmargin=0
 set formatoptions-=tro
 
 " Ignore case on commands
