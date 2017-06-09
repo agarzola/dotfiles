@@ -55,6 +55,9 @@ set ignorecase
 " Display line numbers
 set number
 
+" Map `jk` to ESC
+inoremap jk <ESC>
+
 " CUSTOM COMMANDS
 " Unminify HMTL
 command UnminifyHTML %s/<[^>]*>/\r&\r/g
