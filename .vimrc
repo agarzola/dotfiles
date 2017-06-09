@@ -11,6 +11,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'nelsyeung/twig.vim'
 Plug 'vim-scripts/vim-stylus'
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 
 " Initialize plugin system
 call plug#end()
