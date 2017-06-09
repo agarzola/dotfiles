@@ -82,7 +82,7 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 " Show dotfiles in NERDtree by default
 let NERDTreeShowHidden=1
 
-" Drupal *.module and *.install files.
+" Set syntax to PHP for common Drupal file extensions
 augroup module
   autocmd BufRead,BufNewFile *.module set filetype=php
   autocmd BufRead,BufNewFile *.install set filetype=php
