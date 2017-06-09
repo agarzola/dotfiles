@@ -9,6 +9,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'nelsyeung/twig.vim'
+Plug 'vim-scripts/vim-stylus'
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 
 " Initialize plugin system
