@@ -8,7 +8,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
-Plug 'lumiliet/vim-twig'
+Plug 'nelsyeung/twig.vim'
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 
 " Initialize plugin system
