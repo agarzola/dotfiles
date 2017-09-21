@@ -15,10 +15,14 @@ Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
 Plug 'scrooloose/nerdcommenter'
 Plug 'digitaltoad/vim-pug'
 Plug 'mattn/emmet-vim'
+Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'JamshedVesuna/vim-markdown-preview'
+Plug 'vim-airline/vim-airline'
 Plug 'vim-syntastic/syntastic'
+Plug 'tpope/vim-dispatch'
 Plug 'mustache/vim-mustache-handlebars'
+Plug 'junegunn/goyo.vim'
 
 " Initialize plugin system
 call plug#end()
