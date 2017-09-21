@@ -47,8 +47,8 @@ highlight ColorColumn ctermbg=183
 highlight MatchParen guibg=#5C6773
 
 " Wrap on 80 char column
-set wrap
-set linebreak
+" set wrap
+" set linebreak
 set nolist
 set textwidth=0
 set wrapmargin=0
