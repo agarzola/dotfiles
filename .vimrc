@@ -12,6 +12,12 @@ Plug 'nelsyeung/twig.vim'
 Plug 'vim-scripts/vim-stylus'
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
+Plug 'digitaltoad/vim-pug'
+Plug 'mattn/emmet-vim'
+Plug 'plasticboy/vim-markdown'
+Plug 'JamshedVesuna/vim-markdown-preview'
+Plug 'vim-syntastic/syntastic'
+Plug 'mustache/vim-mustache-handlebars'
 
 " Initialize plugin system
 call plug#end()
@@ -27,6 +33,24 @@ let g:indentLine_char = '|'
 let g:indentLine_first_char = '|'
 let g:indentLine_showFirstIndentLevel = 1
 let g:indentLine_setColors = 0
+
+" Indent new list items in markdown by two spaces only
+let g:vim_markdown_new_list_item_indent = 2
+
+" Don’t fold markdown files
+let g:vim_markdown_folding_disabled = 1
+
+" Automatically generate markdown preview
+let vim_markdown_preview_toggle=3
+
+" Use GitHub-flavored markdown for previews
+let vim_markdown_preview_github=1
+
+" Use Chrome for markdown previews
+let vim_markdown_preview_browser='Google Chrome'
+
+" Use eslint for linting JS
+let g:syntastic_javascript_checkers=['eslint']
 
 " PERSONAL PREFERENCES
 " Set tab size and use spaces
