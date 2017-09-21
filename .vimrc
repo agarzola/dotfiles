@@ -12,6 +12,7 @@ Plug 'nelsyeung/twig.vim'
 Plug 'vim-scripts/vim-stylus'
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
+Plug 'scrooloose/nerdcommenter'
 Plug 'digitaltoad/vim-pug'
 Plug 'mattn/emmet-vim'
 Plug 'plasticboy/vim-markdown'
@@ -33,6 +34,19 @@ let g:indentLine_char = '|'
 let g:indentLine_first_char = '|'
 let g:indentLine_showFirstIndentLevel = 1
 let g:indentLine_setColors = 0
+
+" NERDcommenter
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
 
 " Indent new list items in markdown by two spaces only
 let g:vim_markdown_new_list_item_indent = 2
