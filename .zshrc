@@ -93,6 +93,10 @@ export NVM_DIR="$HOME/.nvm"
 
 source ~/.lastpass_shortcuts.sh
 
+# Turn on vi mode.
+bindkey -v
+bindkey 'jk' vi-cmd-mode
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="/usr/local/Cellar:$PATH"
 export PATH="$PATH:$HOME/.rvm/bin"
