@@ -32,6 +32,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'w0rp/ale'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'junegunn/goyo.vim'
+Plug 'geekjuice/vim-mocha'
 
 " Initialize plugin system
 call plug#end()
