@@ -189,6 +189,10 @@ if v:version > 703 || v:version == 703 && has('patch541')
   set formatoptions+=j
 endif
 
+" Keep text selected after changing indentation.
+vnoremap < <gv
+vnoremap > >gv
+
 " Set syntax to PHP for common Drupal file extensions
 augroup module
   autocmd BufRead,BufNewFile *.module set filetype=php
