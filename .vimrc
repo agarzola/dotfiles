@@ -27,6 +27,7 @@ Plug 'mattn/emmet-vim'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'JamshedVesuna/vim-markdown-preview'
+Plug 'nelstrom/vim-markdown-folding'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-syntastic/syntastic'
 Plug 'tpope/vim-dispatch'
@@ -126,6 +127,15 @@ function UnfuckHTML ()
   :echo "I did my best to unfuck it, sir."
 endfunction
 command UnfuckHTML call UnfuckHTML()
+
+" Fold based on indent.
+set foldmethod=indent
+
+" Deepest fold is 10 levels.
+set foldnestmax=10
+
+" Don’t fold by default.
+set nofoldenable
 
 " Open NERDtree if directory specified
 autocmd StdinReadPre * let s:std_in=1
