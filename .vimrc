@@ -2,8 +2,17 @@
 " Register plugins
 call plug#begin('~/.vim/plugged')
 
-" Shorthand notation
+" Themes
 Plug 'ayu-theme/ayu-vim'
+Plug 'agarzola/dracula-vim'
+Plug 'emhaye/ceudah.vim'
+Plug 'baines/vim-colorscheme-thaumaturge'
+Plug 'kudabux/vim-srcery-drk'
+Plug 'smancill/darkglass'
+Plug 'broduo/broduo-color-scheme'
+Plug 'zanglg/nova.vim'
+
+" Plugins
 Plug 'Yggdroot/indentLine'
 Plug 'airblade/vim-gitgutter'
 Plug 'scrooloose/nerdtree'
@@ -27,12 +36,11 @@ Plug 'junegunn/goyo.vim'
 " Initialize plugin system
 call plug#end()
 
-" PLUGIN OPTIONS
 " Colors & theme
 set termguicolors
-let ayucolor='mirage'
-colorscheme ayu
+colorscheme srcery-drk
 
+" PLUGIN OPTIONS
 " IndentLine
 let g:indentLine_char = '┆'
 let g:indentLine_first_char = '┆'
