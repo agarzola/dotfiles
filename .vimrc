@@ -184,6 +184,11 @@ let NERDTreeShowLineNumbers=1
 " Use relative line numbers in NERDtree.
 autocmd FileType nerdtree setlocal relativenumber
 
+" Sane line joining.
+if v:version > 703 || v:version == 703 && has('patch541')
+  set formatoptions+=j
+endif
+
 " Set syntax to PHP for common Drupal file extensions
 augroup module
   autocmd BufRead,BufNewFile *.module set filetype=php
