@@ -119,7 +119,7 @@ set ruler
 
 " Highlight for color and column
 set colorcolumn=81
-set cursorline
+set cursorcolumn
 highlight ColorColumn ctermbg=183
 
 " Color overrides
