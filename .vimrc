@@ -40,7 +40,14 @@ call plug#end()
 
 " Colors & theme
 let g:gruvbox_contrast_dark = 'hard'
+let g:gruvbox_cursor_column = '000'
+let g:gruvbox_italicize_comments = 1
 colorscheme gruvbox
+
+" Color overrides
+hi CursorColumn guifg=NONE ctermfg=NONE guibg=#000000 ctermbg=000
+hi ColorColumn guifg=NONE ctermfg=NONE guibg=#000000 ctermbg=000
+hi MatchParen guibg=NONE ctermbg=000
 
 " Set ALE error/warning markers & clear bg color
 let g:ale_sign_error = '💀'
@@ -121,10 +128,6 @@ set ruler
 " Highlight for color and column
 set colorcolumn=81
 set cursorcolumn
-highlight ColorColumn ctermbg=183
-
-" Color overrides
-highlight MatchParen guibg=#5C6773
 
 " Wrap on 80 char column
 " set wrap
