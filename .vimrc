@@ -29,8 +29,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'nelstrom/vim-markdown-folding'
 Plug 'vim-airline/vim-airline'
-Plug 'vim-syntastic/syntastic'
-Plug 'tpope/vim-dispatch'
+Plug 'w0rp/ale'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'junegunn/goyo.vim'
 
@@ -40,6 +39,30 @@ call plug#end()
 " Colors & theme
 set termguicolors
 colorscheme srcery-drk
+
+" Set ALE error/warning markers & clear bg color
+let g:ale_sign_error = '💀'
+let g:ale_sign_warning = '👻'
+highlight clear ALEErrorSign
+highlight clear ALEWarningSign
+
+let g:ale_fixers = {
+      \  'javascript': [ 'eslint' ],
+      \}
+
+" Keep ALE column open
+let g:ale_sign_column_always = 1
+
+" Show errors & warnings in airline
+let g:airline#extensions#ale#enabled = 1
+
+" Set ALE linter delay, in milliseconds
+" let g:ale_lint_delay = 800
+
+" Use only eslint for javascript
+let g:ale_linters = {
+      \  'javascript': [ 'eslint' ],
+      \}
 
 " PLUGIN OPTIONS
 " IndentLine
