@@ -11,6 +11,7 @@ Plug 'kudabux/vim-srcery-drk'
 Plug 'smancill/darkglass'
 Plug 'broduo/broduo-color-scheme'
 Plug 'zanglg/nova.vim'
+Plug 'morhetz/gruvbox'
 
 " Plugins
 Plug 'Yggdroot/indentLine'
@@ -38,8 +39,8 @@ Plug 'geekjuice/vim-mocha'
 call plug#end()
 
 " Colors & theme
-set termguicolors
-colorscheme srcery-drk
+let g:gruvbox_contrast_dark = 'hard'
+colorscheme gruvbox
 
 " Set ALE error/warning markers & clear bg color
 let g:ale_sign_error = '💀'
