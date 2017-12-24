@@ -86,6 +86,9 @@ let g:NERDCustomDelimiters = { 'c': { 'left': '/**','right': '*/' } }
 " Allow commenting and inverting empty lines (useful when commenting a region)
 let g:NERDCommentEmptyLines = 1
 
+" Display line numbers in Goyo
+let g:goyo_linenr = 1
+
 " Indent new list items in markdown by two spaces only
 let g:vim_markdown_new_list_item_indent = 2
 
@@ -133,8 +136,9 @@ set formatoptions-=tro
 " Ignore case on commands
 set ignorecase
 
-" Display line numbers
+" Display hybrid line numbers
 set number
+set relativenumber
 
 " Map `jk` to ESC
 inoremap jk <ESC>
@@ -173,6 +177,12 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Show dotfiles in NERDtree by default
 let NERDTreeShowHidden=1
+
+" Enable line numbers in NERDtree.
+let NERDTreeShowLineNumbers=1
+
+" Use relative line numbers in NERDtree.
+autocmd FileType nerdtree setlocal relativenumber
 
 " Set syntax to PHP for common Drupal file extensions
 augroup module
