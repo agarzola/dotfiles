@@ -105,3 +105,9 @@ export PATH="$PATH:/Applications/MAMP/Library/bin"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:$HOME/bin"
 export EDITOR="vim"
+
+function jira() {
+  JIRA_URL="https://jira.meredith.com/browse/$1";
+  open -a /Applications/Firefox.app $JIRA_URL;
+  JIRA_URL=null;
+}

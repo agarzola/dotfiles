@@ -31,9 +31,11 @@ Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'nelstrom/vim-markdown-folding'
 Plug 'vim-airline/vim-airline'
 Plug 'w0rp/ale'
+Plug 'tpope/vim-commentary'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'junegunn/goyo.vim'
 Plug 'geekjuice/vim-mocha'
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
 " Initialize plugin system
 call plug#end()
@@ -78,7 +80,7 @@ let g:ale_linters = {
 let g:indentLine_char = '┆'
 let g:indentLine_first_char = '┆'
 let g:indentLine_showFirstIndentLevel = 1
-let g:indentLine_setColors = 0
+" let g:indentLine_setColors = 0
 let g:indentLine_conceallevel=2
 
 " NERDcommenter
@@ -104,13 +106,13 @@ let g:vim_markdown_new_list_item_indent = 2
 let g:vim_markdown_folding_disabled = 1
 
 " Automatically generate markdown preview
-let vim_markdown_preview_toggle=3
+let vim_markdown_preview_toggle=0
 
 " Use GitHub-flavored markdown for previews
 let vim_markdown_preview_github=1
 
 " Use Chrome for markdown previews
-let vim_markdown_preview_browser='Google Chrome'
+let vim_markdown_preview_browser='Firefox'
 
 " Use eslint for linting JS
 let g:syntastic_javascript_checkers=['eslint']
