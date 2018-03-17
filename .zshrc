@@ -111,3 +111,12 @@ function jira() {
   open -a /Applications/Firefox.app $JIRA_URL;
   JIRA_URL=null;
 }
+
+# Bind C-h to home dir.
+function goto_home() {
+  BUFFER="cd ~/"$BUFFER
+  zle end-of-line
+  zle accept-line
+}
+zle -N goto_home
+bindkey "^h" goto_home
