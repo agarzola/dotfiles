@@ -3,38 +3,41 @@
 call plug#begin('~/.vim/plugged')
 
 " Themes
-Plug 'ayu-theme/ayu-vim'
-Plug 'agarzola/dracula-vim'
-Plug 'emhaye/ceudah.vim'
-Plug 'baines/vim-colorscheme-thaumaturge'
-Plug 'kudabux/vim-srcery-drk'
-Plug 'smancill/darkglass'
-Plug 'broduo/broduo-color-scheme'
-Plug 'zanglg/nova.vim'
 Plug 'morhetz/gruvbox'
+" Plug 'ayu-theme/ayu-vim'
+" Plug 'agarzola/dracula-vim'
+" Plug 'emhaye/ceudah.vim'
+" Plug 'baines/vim-colorscheme-thaumaturge'
+" Plug 'kudabux/vim-srcery-drk'
+" Plug 'smancill/darkglass'
+" Plug 'broduo/broduo-color-scheme'
+" Plug 'zanglg/nova.vim'
 
-" Plugins
-Plug 'Yggdroot/indentLine'
-Plug 'airblade/vim-gitgutter'
-Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-fugitive'
-Plug 'nelsyeung/twig.vim'
-Plug 'vim-scripts/vim-stylus'
+" Syntax Highlighting
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
-Plug 'scrooloose/nerdcommenter'
 Plug 'digitaltoad/vim-pug'
 Plug 'mattn/emmet-vim'
-Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
-Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'nelstrom/vim-markdown-folding'
-Plug 'vim-airline/vim-airline'
-Plug 'w0rp/ale'
-Plug 'tpope/vim-commentary'
 Plug 'mustache/vim-mustache-handlebars'
-Plug 'junegunn/goyo.vim'
+Plug 'nelsyeung/twig.vim'
+" Plug 'vim-scripts/vim-stylus'
+
+" Helpers
+Plug 'w0rp/ale'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --tern-completer' }
+Plug 'Yggdroot/indentLine'
+Plug 'godlygeek/tabular'
+Plug 'scrooloose/nerdcommenter'
 Plug 'geekjuice/vim-mocha'
+
+" UI
+Plug 'scrooloose/nerdtree'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'JamshedVesuna/vim-markdown-preview'
+Plug 'vim-airline/vim-airline'
+Plug 'junegunn/goyo.vim'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 
 " Initialize plugin system
