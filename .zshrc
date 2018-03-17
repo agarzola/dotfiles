@@ -87,6 +87,7 @@ alias git=hub
 alias groot='cd $(git rev-parse --show-toplevel || echo ".")'
 alias dotfiles="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias dmerged='git branch -d $(git branch --merged | grep -v "^*" | tr -d "\n")'
+alias jrnl='ntbk'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
