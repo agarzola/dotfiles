@@ -51,7 +51,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git-prompt)
+plugins=(git-prompt zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -121,3 +121,10 @@ function goto_home() {
 }
 zle -N goto_home
 bindkey "^h" goto_home
+
+# Turn on key bindings for zsh-autosuggestions.
+bindkey '^l' autosuggest-accept
+bindkey '^j' autosuggest-execute
+
+# Disable zsh-autosuggestions for larger buffers.
+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
