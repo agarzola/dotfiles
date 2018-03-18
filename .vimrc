@@ -199,6 +199,7 @@ let NERDTreeShowLineNumbers=1
 " Use relative line numbers in NERDtree.
 autocmd FileType nerdtree setlocal relativenumber
 
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'JamshedVesuna/vim-markdown-preview'
