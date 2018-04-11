@@ -200,6 +200,11 @@ let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal relativenumber
 
 Plug 'ctrlpvim/ctrlp.vim'
+" Ignore directories from ctrlp indexing.
+let g:ctrlp_custom_ignore = {
+  \ 'dir': '\v[\/](node_modules|\.(git|hg|svn))$',
+  \ }
+
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'JamshedVesuna/vim-markdown-preview'
