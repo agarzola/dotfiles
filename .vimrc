@@ -33,6 +33,12 @@ set relativenumber
 " Map `jk` to ESC
 inoremap jk <ESC>
 
+" Use Ctrl-[hjkl] to navigate splits.
+nmap <silent> <c-k> :wincmd k<CR>
+nmap <silent> <c-j> :wincmd j<CR>
+nmap <silent> <c-h> :wincmd h<CR>
+nmap <silent> <c-l> :wincmd l<CR>
+
 " Fold based on indent.
 set foldmethod=indent
 
