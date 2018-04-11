@@ -238,4 +238,4 @@ call plug#end()
 
 " Set theme, now that it’s been properly loaded.
 " (Can’t set the colorscheme variable until Plug has initialized.)
-colorscheme gruvbox
+" colorscheme gruvbox
