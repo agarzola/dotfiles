@@ -129,3 +129,8 @@ bindkey '^j' autosuggest-execute
 
 # Disable zsh-autosuggestions for larger buffers.
 ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=20
+
+# Password store options.
+export PASSWORD_STORE_CLIP_TIME=10
+export PASSWORD_STORE_GENERATED_LENGTH=35
+export PASSWORD_STORE_CLIP_DEFAULT=1
