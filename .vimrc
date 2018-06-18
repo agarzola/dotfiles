@@ -116,7 +116,8 @@ hi MatchParen guibg=NONE ctermbg=000
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'digitaltoad/vim-pug'
 Plug 'mattn/emmet-vim'
-Plug 'plasticboy/vim-markdown'
+Plug 'shime/vim-livedown'
+" Plug 'plasticboy/vim-markdown'
 " Indent new list items in markdown by two spaces only
 let g:vim_markdown_new_list_item_indent = 2
 
@@ -238,4 +239,4 @@ call plug#end()
 
 " Set theme, now that it’s been properly loaded.
 " (Can’t set the colorscheme variable until Plug has initialized.)
-" colorscheme gruvbox
+colorscheme gruvbox
