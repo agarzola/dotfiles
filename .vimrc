@@ -142,6 +142,7 @@ highlight clear ALEWarningSign
 
 let g:ale_fixers = {
       \  'javascript': [ 'eslint' ],
+      \  'json': [ 'jq' ],
       \}
 
 " Keep ALE column open
