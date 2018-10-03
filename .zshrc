@@ -89,6 +89,7 @@ alias dotfiles="git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 alias dmerged='git branch -d $(git branch --merged | grep -v "^*" | tr -d "\n")'
 alias jrnl='ntbk'
 alias tmux="env TERM=xterm-256color tmux"
+alias pupper="open https://i.imgur.com/QmdNztE.gifv"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
