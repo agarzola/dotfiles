@@ -118,6 +118,8 @@ Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'digitaltoad/vim-pug'
 Plug 'mattn/emmet-vim'
 Plug 'shime/vim-livedown'
+let g:livedown_browser = 'firefox'
+
 " Plug 'plasticboy/vim-markdown'
 " Indent new list items in markdown by two spaces only
 let g:vim_markdown_new_list_item_indent = 2
@@ -216,15 +218,6 @@ let g:ctrlp_custom_ignore = {
 
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
-Plug 'JamshedVesuna/vim-markdown-preview'
-" Automatically generate markdown preview
-let vim_markdown_preview_toggle=0
-
-" Use GitHub-flavored markdown for previews
-let vim_markdown_preview_github=1
-
-" Use Chrome for markdown previews
-let vim_markdown_preview_browser='Firefox'
 
 Plug 'vim-airline/vim-airline'
 Plug 'junegunn/goyo.vim'
