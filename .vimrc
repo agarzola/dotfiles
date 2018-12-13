@@ -40,10 +40,10 @@ nmap <silent> <c-h> :wincmd h<CR>
 nmap <silent> <c-l> :wincmd l<CR>
 
 " Fold based on indent.
-set foldmethod=indent
+set foldmethod=manual
 
 " Deepest fold is 10 levels.
-set foldnestmax=10
+set foldnestmax=40
 
 " Don’t fold by default.
 set nofoldenable
@@ -97,15 +97,16 @@ call plug#begin('~/.vim/plugged')
 " ==============================================================================
 " THEME
 " ==============================================================================
-Plug 'morhetz/gruvbox'
-
-" Theme settings
-let g:gruvbox_contrast_dark = 'hard'
-let g:gruvbox_cursor_column = '000'
-let g:gruvbox_italicize_comments = 1
-
+" Plug 'morhetz/gruvbox'
+" 
+" " Theme settings
+" let g:gruvbox_contrast_dark = 'hard'
+" let g:gruvbox_cursor_column = '000'
+" let g:gruvbox_italicize_comments = 1
+" 
 " Color overrides
 hi CursorColumn guifg=NONE ctermfg=NONE guibg=#000000 ctermbg=000
+hi Folded guifg=NONE ctermfg=NONE guibg=#000000 ctermbg=000
 hi ColorColumn guifg=NONE ctermfg=NONE guibg=#000000 ctermbg=000
 hi MatchParen guibg=NONE ctermbg=000
 
@@ -240,4 +241,4 @@ call plug#end()
 
 " Set theme, now that it’s been properly loaded.
 " (Can’t set the colorscheme variable until Plug has initialized.)
-colorscheme gruvbox
+" colorscheme gruvbox
