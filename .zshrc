@@ -122,7 +122,7 @@ function goto_home() {
   zle accept-line
 }
 zle -N goto_home
-bindkey "^h" goto_home
+# bindkey "^h" goto_home
 
 # Turn on key bindings for zsh-autosuggestions.
 bindkey '^l' autosuggest-accept
