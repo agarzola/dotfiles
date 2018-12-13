@@ -151,9 +151,6 @@ let g:ale_fixers = {
 " Keep ALE column open
 let g:ale_sign_column_always = 1
 
-" Show errors & warnings in airline
-let g:airline#extensions#ale#enabled = 1
-
 " Set ALE linter delay, in milliseconds
 " let g:ale_lint_delay = 800
 
@@ -220,6 +217,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 
 Plug 'vim-airline/vim-airline'
+" Show errors & warnings in airline
+let g:airline#extensions#ale#enabled = 1
+let g:airline#extensions#branch#displayed_head_limit = 20
+
 Plug 'junegunn/goyo.vim'
 " Display line numbers in Goyo
 let g:goyo_linenr = 1
