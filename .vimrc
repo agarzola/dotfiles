@@ -11,9 +11,10 @@ set directory=/tmp
 " Show line and column ruler count
 set ruler
 
-" Highlight for color and column
+" Highlight for color, column, and line
 set colorcolumn=81
 set cursorcolumn
+set cursorline
 
 " Wrap on 80 char column
 " set wrap
@@ -106,6 +107,7 @@ call plug#begin('~/.vim/plugged')
 " 
 " Color overrides
 hi CursorColumn guifg=NONE ctermfg=NONE guibg=#000000 ctermbg=000
+hi CursorLine guifg=NONE ctermfg=NONE guibg=#000000 ctermbg=000
 hi Folded guifg=NONE ctermfg=NONE guibg=#000000 ctermbg=000
 hi ColorColumn guifg=NONE ctermfg=NONE guibg=#000000 ctermbg=000
 hi MatchParen guibg=NONE ctermbg=000
