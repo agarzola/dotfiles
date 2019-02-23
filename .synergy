@@ -13,7 +13,13 @@
 synserver () {
   case $1 in
     up)
-      ~/projects/synergy-core/build/bin/synergys -c ~/.synergy.conf
+      # Use supplied config file path, falling back on default.
+      SYNERGY_SERVER_CONFIG="${2:-$HOME/.synergy.conf}"
+      # Kill existing synergy servers, if any.
+      synserver kill
+      # Start synergy server and point it at config.
+      echo "Starting synergy server with $SYNERGY_SERVER_CONFIG."
+      ~/projects/synergy-core/build/bin/synergys -c $SYNERGY_SERVER_CONFIG
       ;;
     kill)
       pkill -u $(whoami) synergys
@@ -44,6 +50,7 @@ synclient () {
       # Use supplied server, falling back on default set in .zshrc file.
       CURRENT_SYNERGY_SERVER="${2:-$SYNERGY_SERVER}"
       # Start synergy client and point it at server.
+      echo "Starting synergy client pointed at $CURRENT_SYNERGY_SERVER."
       ~/projects/synergy-core/build/bin/synergyc $CURRENT_SYNERGY_SERVER
       ;;
     kill)
