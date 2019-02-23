@@ -37,9 +37,12 @@ synserver () {
 #       Return all synergy client process ids owned by me.
 
 synclient () {
-  CURRENT_SYNERGY_SERVER="${2:-$SYNERGY_SERVER}"
   case $1 in
     up)
+      # Kill existing synergy clients, if any.
+      synclient kill
+      # Use supplied server, falling back on default set in .zshrc file.
+      CURRENT_SYNERGY_SERVER="${2:-$SYNERGY_SERVER}"
       # Start synergy client and point it at server.
       ~/projects/synergy-core/build/bin/synergyc $CURRENT_SYNERGY_SERVER
       ;;
