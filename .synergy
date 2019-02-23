@@ -37,11 +37,11 @@ synserver () {
 #       Return all synergy client process ids owned by me.
 
 synclient () {
-  SYNERGY_SERVER="${2:-$SYNERGY_SERVER}"
+  CURRENT_SYNERGY_SERVER="${2:-$SYNERGY_SERVER}"
   case $1 in
     up)
       # Start synergy client and point it at server.
-      ~/projects/synergy-core/build/bin/synergyc $SYNERGY_SERVER
+      ~/projects/synergy-core/build/bin/synergyc $CURRENT_SYNERGY_SERVER
       ;;
     kill)
       # Kill synergy client.
