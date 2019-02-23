@@ -1,0 +1,76 @@
+# Synergy server wrapper.
+#
+# Usage:
+#   synserver up
+#       Start a new synergy server instance using my default config.
+#   synserver up path/to/alt/config/file.conf
+#       Start a new synergy server instance using a custom config.
+#   synserver kill
+#       Kill all synergy server processes owned by me.
+#   synserver
+#       Return all synergy server process ids owned by me.
+
+synserver () {
+  case $1 in
+    up)
+      ~/projects/synergy-core/build/bin/synergys -c ~/.synergy.conf
+      ;;
+    kill)
+      pkill -u $(whoami) synergys
+      ;;
+    *)
+      pgrep -u $(whoami) synergys
+      ;;
+  esac
+}
+
+# Synergy client wrapper.
+#
+# Usage:
+#   synclient up
+#       Start a new synergy client instance using my default server (SYNERGY_SERVER).
+#   synclient up server
+#       Start a new synergy client instance using a custom server address.
+#   synclient kill
+#       Kill all synergy client processes owned by me.
+#   synclient
+#       Return all synergy client process ids owned by me.
+
+synclient () {
+  SYNERGY_SERVER="${2:-$SYNERGY_SERVER}"
+  case $1 in
+    up)
+      # Start synergy client and point it at server.
+      ~/projects/synergy-core/build/bin/synergyc $SYNERGY_SERVER
+      ;;
+    kill)
+      # Kill synergy client.
+      pkill -u $(whoami) synergyc
+      ;;
+    *)
+      # Return synergy client process id.
+      pgrep -u $(whoami) synergyc
+      ;;
+  esac
+}
+
+# Basic utility for both synergy server and synergy client.
+#
+# Usage:
+#   synall kill
+#       Kill all synergy processes owned by me (server & client).
+#   synall
+#       Return all synergy (server & client) process ids owned by me.
+
+synall () {
+  case $1 in
+    kill)
+      # Kill all synergy processes.
+      pkill -u $(whoami) synergy
+      ;;
+    *)
+      # Return all synergy process ids.
+      pgrep -u $(whoami) -l synergy
+      ;;
+  esac
+}
