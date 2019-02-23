@@ -138,4 +138,4 @@ export PASSWORD_STORE_CLIP_DEFAULT=1
 
 # Synergy wrapper.
 export SYNERGY_SERVER="starbuck.local"
-source ~/.synergy
+source ~/.synscript
